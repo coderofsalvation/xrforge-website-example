@@ -1,0 +1,19 @@
+name: Publish
+on:
+  push:
+    branches: [main]
+jobs:
+  publish:
+    runs-on: codeberg-tiny
+    steps:
+      - uses: actions/checkout@v7
+      - run: |
+          wget "https://codeberg.org/coderofsalvation/xrforge/releases/download/0.1/xrforge-x86_64.com" -O xrforge.com
+          chmod +x xrforge.com
+          ./xrforge.com generate
+      - uses: actions/git-pages@v2
+        with:
+          #site: https://domainname.tld/
+          server: codeberg.page
+          token: ${{ forgejo.token }}
+          source: www/
