@@ -1,6 +1,6 @@
 #!/bin/sh
 test -f xrforge.com || {
-  wget "https://codeberg.org/coderofsalvation/xrforge-v2/releases/download/0.1/xrforge-x86_64.com" -O xrforge.com
+  wget "https://codeberg.org/coderofsalvation/xrforge-v2/releases/download/0.2/xrforge-x86_64.com" -O xrforge.com
   chmod +x xrforge.com
 }
 
