@@ -1,0 +1,57 @@
+-- TIP: run 'xrforge.com createplugin' to start writing plugins
+
+      
+
+return {
+  plugin_janusxr_jml = "<!-- see https://coderofsalvation.github.io/janus-guide for markup -->",
+  plugin_global_headertags = "<!--\
+<link rel=\"stylesheet\" type=\"text/css\" href=\"https://my.org/foo.css\" media=\"all\" />\
+-->\
+      ",
+  plugin_webhook_url_3 = "",
+  plugin_git_repo_4 = "",
+  name = "XRForge",
+  plugin_federation_url_3 = "",
+  plugin_janusxr_wrap_aframe = "room_plane",
+  plugin_webhook_method = "POST",
+  plugin_janusxr_janusweb_corsproxies = "https://p.janusxr.org https://cors.xrforge.org",
+  plugin_global_topmenu_html = "<a href=\"/about\">about</a>",
+  plugin_janusxr_portalroom = "room_plane",
+  plugin_manyfold_instance_2 = "",
+  plugin_federation_strategy = "always",
+  plugin_webhook_url_1 = "",
+  plugin_manyfold_instance_3 = "",
+  plugin_janusxr_scraper = "disabled",
+  plugin_janusxr_wrap_image = "room_plane",
+  plugin_xrfragments_filetypes = "glb gltf obj dae",
+  plugin_federation_url_1 = "https://xrforge.isvery.ninja https://i.imgur.com/x7fzn9v.png",
+  plugin_janusxr_wrap_video = "room_plane",
+  plugin_federation_url_2 = "https://www.janusxr.org/new/ https://archive.org/download/janusxr-1/janusxr.png",
+  plugin_markdown_files = "README.md",
+  plugin_git_repo_5 = "",
+  plugin_janusxr_wrap_3dfile = "room_plane",
+  plugin_git_repo_1 = "",
+  plugin_manyfold_sync_strategy = "recent",
+  baseurl = "/",
+  updated = 1786556282,
+  plugin_markdown_strategy = "headerparagraph",
+  plugin_webhook_url_2 = "",
+  plugin_manyfold_instance_1 = "https://xrforge.isvery.ninja",
+  plugin_webhook_format = "JSON",
+  admin_subtitle = "Manage your XR experiences here",
+  plugin_federation_title = "Federated neighbourhoods",
+  plugin_global_subtitle = "Portable XR experiences for Phone, VRheadset & desktop.",
+  plugin_global_title = "xrforge",
+  plugin_federation_url_4 = "",
+  admin_title = "admin panel",
+  plugin_git_repo_3 = "",
+  plugin_git_repo_2 = "",
+  plugin_global_topmenu_mapname = "map",
+  plugin_global_homepage = "2D",
+  plugin_convert_assimp_filetypes_in = "x3d",
+  plugin_janusxr_janusweb_endpoint = "/janusxr",
+  plugin_federation_url_5 = "",
+  plugin_moderation_mutekeywords = "wip beta -v[0-9] customerX",
+  plugin_diskscan_dir = "./myverse",
+  plugin_convert_assimp_filetypes_out = "glb"
+}

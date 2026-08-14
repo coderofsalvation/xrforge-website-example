@@ -8,12 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - run: |
-          wget "https://codeberg.org/coderofsalvation/xrforge/releases/download/0.1/xrforge-x86_64.com" -O xrforge.com
-          chmod +x xrforge.com
-          ./xrforge.com generate
-      - uses: actions/git-pages@v2
+        ./generate.sh
+      - if: ${{ forgejo.event_name == 'push' && forgejo.event.ref == 'refs/heads/main' }}
+        uses: actions/git-pages@v2
         with:
-          #site: https://domainname.tld/
-          server: codeberg.page
+          site: https://${{ forgejo.event.repository.owner.username }}.codeberg.page/${{ forgejo.event.repository.name }}/
           token: ${{ forgejo.token }}
           source: www/
