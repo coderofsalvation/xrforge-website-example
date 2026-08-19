@@ -4,7 +4,7 @@
 
     <object id="cube" pos="-5 1 0" scale="2 2 2"/>
 
-    <link js_id="aframescene" shader_id="defaultportal" draw_glow="false" url="../AFRAME/helloworld/index.html" pos="2 0 0 "/>
+    <link js_id="aframescene" shader_id="defaultportal" draw_glow="false" url="../AFRAME/index.html" pos="2 0 0 "/>
 
   </room>
 </fireboxroom>
